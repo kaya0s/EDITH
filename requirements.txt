@@ -1,0 +1,33 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Jarvis AI Platform — Python Dependencies
+# ──────────────────────────────────────────────────────────────────────────────
+# Install:  pip install -r requirements.txt
+# Upgrade:  pip install -r requirements.txt --upgrade
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Groq SDK (LLM + STT via Groq Cloud) ──────────────────────────────────────
+groq>=0.9.0
+
+# ── Text-to-Speech (Microsoft Edge TTS — neural voices, no API key needed) ───
+edge-tts>=6.1.9
+
+# ── Environment variable management ──────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Audio recording (microphone input) ───────────────────────────────────────
+sounddevice>=0.4.6
+
+# ── WAV file I/O (save recorded audio) ───────────────────────────────────────
+scipy>=1.11.0
+
+# ── Numerical arrays (used by sounddevice + scipy pipeline) ──────────────────
+numpy>=1.24.0
+
+# ── Cross-platform audio playback (MP3 + WAV; primary playback backend) ──────
+pygame>=2.5.0
+
+# ── HTTP client used internally by the Groq SDK ──────────────────────────────
+httpx>=0.27.0
+
+# ── Keyboard input handling (for manual interrupt) ────────────────────────────
+keyboard>=0.13.5
