@@ -1,6 +1,6 @@
 # Building JARVIS Standalone Application
 
-This guide explains how to build JARVIS into a standalone executable that can be distributed and run without Python installation.
+This guide explains how to build JARVIS into a standalone executable that can be distributed and run without Python..installation.
 
 ## Prerequisites
 
