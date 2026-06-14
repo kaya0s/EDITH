@@ -24,7 +24,7 @@
 
 ## 🌐 Overview
 
-Jarvis is a **modular AI assistant platform** built for extensibility. The architecture is designed from day one to support multiple independent features — voice, automation, memory, browser control, smart home, and more — without ever rewriting the core.
+Edith is a **modular AI assistant platform** built for extensibility. The architecture is designed from day one to support multiple independent features — voice, automation, memory, browser control, smart home, and more — without ever rewriting the core.
 
 The system is built around three principles:
 
@@ -95,11 +95,11 @@ Microphone → Groq Whisper (STT) → LLaMA 3.1 8B (LLM) → Edge TTS → Speake
 ## 📁 Project Structure
 
 ```
-JARVIS2.0/
+Edith2.0/
 │
 ├── app/
 │   ├── __init__.py
-│   └── main.py                  # ← run this to start Jarvis
+│   └── main.py                  # ← run this to start Edith
 │
 ├── core/
 │   ├── __init__.py
@@ -131,7 +131,7 @@ JARVIS2.0/
 │   └── logger.py                # Centralised logging setup
 │
 ├── logs/                        # Runtime log files (auto-created)
-│   └── jarvis.log
+│   └── Edith.log
 │
 ├── audio/                       # Runtime audio artefacts (auto-created)
 │   ├── input.wav                # Microphone recording (overwritten each cycle)
@@ -150,7 +150,7 @@ JARVIS2.0/
 ### 1. Clone / download the project
 
 ```bash
-cd JARVIS2.0
+cd Edith2.0
 ```
 
 ### 2. Create and activate a virtual environment
@@ -178,7 +178,7 @@ cp .env.example .env
 # Now open .env and paste your Groq API key
 ```
 
-### 5. Run Jarvis
+### 5. Run Edith
 
 ```bash
 python app/main.py
@@ -229,13 +229,13 @@ You will see:
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║         🤖  Jarvis — Modular AI Platform  🤖                 ║
+║         🤖  Edith — Modular AI Platform  🤖                 ║
 ╚══════════════════════════════════════════════════════════════╝
 
 ✅  Voice module initialised — all services online.
 
 ╔══════════════════════════════════════════════════════════╗
-║       🤖  Jarvis Voice Assistant  —  Listening Active    ║
+║       🤖  Edith Voice Assistant  —  Listening Active    ║
 ╠══════════════════════════════════════════════════════════╣
 ║  Exit phrases : bye / exit / goodbye / quit / …          ║
 ║  Press        : Ctrl-C to quit immediately               ║
@@ -249,16 +249,16 @@ You will see:
 📝  You said : What is the capital of France?
 
 💬  Thinking…
-🤖  Jarvis    : The capital of France is Paris.
+🤖  Edith    : The capital of France is Paris.
 
 🔈  Synthesising speech…
 🔊  Playing response…
 ```
 
-### Stopping Jarvis
+### Stopping Edith
 
 Say any of these phrases:
-- `"goodbye"` / `"goodbye Jarvis"`
+- `"goodbye"` / `"goodbye Edith"`
 - `"exit"` / `"quit"` / `"stop"`
 - `"shut down"` / `"turn off"`
 - `"bye"`
@@ -269,7 +269,7 @@ Or press **Ctrl-C** at any time.
 
 ## 🔌 How to Add New Modules
 
-Adding a new capability to Jarvis requires **three steps** and touches **zero existing files** (except `app/main.py` for registration).
+Adding a new capability to Edith requires **three steps** and touches **zero existing files** (except `app/main.py` for registration).
 
 ### Step 1 — Create the module file
 
@@ -375,7 +375,7 @@ text = stt.transcribe("audio/input.wav")
 from services.tts_service import TTSService
 
 tts = TTSService()
-path = tts.synthesize("Hello, I am Jarvis.")
+path = tts.synthesize("Hello, I am Edith.")
 ```
 
 ---
