@@ -1,4 +1,4 @@
-# 🤖 Jarvis — Modular AI Platform
+# EDITH — Modular AI Platform
 
 > A scalable, extensible AI assistant platform designed to grow beyond voice.
 > Voice interaction is **Feature #1** — not the whole system.
